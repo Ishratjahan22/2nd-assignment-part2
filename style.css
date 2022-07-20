@@ -1,0 +1,196 @@
+body {
+  font-family: "Ibarra Real Nova", serif;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.banner-section {
+  padding: 50px 100px;
+}
+.banner-div {
+  background-color: black;
+  height: 600px;
+  border-radius: 25px;
+  display: flex;
+  padding: 0px 50px;
+  padding-top: 50px;
+}
+
+.banner-content-div {
+  width: 100%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.banner-content-div h2 {
+  font-size: 61px;
+  line-height: 1;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+.banner-btn {
+  padding: 13px 30px;
+  color: white;
+  background-color: red;
+  border-radius: 5px;
+}
+.banner-btn:hover {
+  background-color: rgb(71, 181, 255);
+}
+.banner-img-div {
+  width: 100%;
+}
+.banner-img-div img {
+  width: 100%;
+  height: 100%;
+}
+
+.info-section {
+  padding: 50px 100px;
+  display: flex;
+}
+.info-menu-div {
+  flex: 1;
+  background-color: black;
+  height: 300px;
+  margin-right: 20px;
+  border-radius: 15px;
+  padding: 20px 20px;
+}
+.info-menu-div div {
+  width: 100%;
+  margin-top: 20px;
+}
+.info-menu-div div button {
+  width: 100%;
+  padding: 20px 20px;
+  border-radius: 15px;
+  font-weight: bold;
+}
+.info-cards {
+  flex: 4;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.b-img {
+  width: 100%;
+}
+.info-card-div {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  width: 200px;
+  margin-bottom: 20px;
+  padding: 30px;
+  height: 200px;
+}
+.b-c-info {
+  padding: 6px 10px;
+}
+.b-i-btn {
+  background-color: transparent;
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+.footer {
+  background-color: black;
+  width: 100%;
+  height: 45vh;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.f-menus {
+  margin-top: 20px;
+  padding: 10px 60px;
+}
+.f-menus span {
+  margin-left: 15px;
+}
+.view {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  padding: 50px 100px;
+}
+
+/* -------------'responsive for tab'-------------- */
+@media only screen and (min-width: 960px) {
+  .view {
+    display: none;
+  }
+}
+@media only screen and (min-width: 600px) and (max-width: 959px) {
+  .banner-section {
+    padding: 30px 50px;
+  }
+  .banner-div {
+    height: 500px;
+  }
+  .banner-content-div h2 {
+    font-size: 45px;
+  }
+  .info-section {
+    padding: 30px 50px;
+    flex-direction: column;
+  }
+  .info-menu-div {
+    background-color: transparent;
+    display: flex;
+    gap: 10px;
+    margin-bottom: 30px;
+  }
+  .icd-tablet {
+    display: none;
+  }
+}
+/* ---------'mobile responsive'---------- */
+@media only screen and (max-width: 600px) {
+  .banner-section {
+    padding: 10px 20px;
+  }
+  .banner-div {
+    flex-direction: column;
+    padding-top: 20px;
+    height: 650px;
+    text-align: center;
+  }
+  .banner-content-div h2 {
+    font-size: 25px;
+  }
+  .banner-img-div img {
+    margin-top: 18px;
+  }
+  .info-section {
+    padding: 30px 50px;
+    flex-direction: column;
+  }
+  .info-menu-div {
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 30px;
+  }
+  .view {
+    display: none;
+  }
+  .footer {
+    height: 85vh;
+  }
+  .f-menus {
+    margin-top: 20px;
+    padding: 10px 20px;
+  }
+  .f-menus span {
+    display: inline-block;
+
+    width: 100%;
+    text-align: center;
+    margin: 5px 0px;
+  }
+}
